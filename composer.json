@@ -1,0 +1,66 @@
+{
+    "name": "marque/guise",
+    "description": "Livewire web frontend for Marque tracker platform",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Letter Of Marque Software",
+            "email": "dan@lom.software",
+            "homepage": "https://lom.software"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/letterofmarque/marque/issues",
+        "source": "https://github.com/letterofmarque/marque"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../trove",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "marque/trove": "@dev",
+        "illuminate/support": "^12.0",
+        "illuminate/routing": "^12.0",
+        "illuminate/view": "^12.0",
+        "livewire/livewire": "^4.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^10.0",
+        "pestphp/pest": "^4.0",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Marque\\Guise\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Marque\\Guise\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Marque\\Guise\\GuiseServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "pest"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
