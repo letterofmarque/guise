@@ -31,7 +31,7 @@
         },
         {
             "type": "path",
-            "url": "../ise",
+            "url": "../deck",
             "options": {
                 "symlink": true
             }
@@ -55,7 +55,7 @@
         "php": "^8.3",
         "marque/trove": "^3.0|^4.0",
         "marque/threepio": "^3.0",
-        "marque/ise": "^1.0",
+        "marque/deck": "^2.0",
         "illuminate/support": "^13.0",
         "illuminate/routing": "^13.0",
         "illuminate/view": "^13.0",
@@ -70,7 +70,7 @@
         "nunomaduro/pao": "^1.1"
     },
     "suggest": {
-        "marque/parley": "Adds a comment thread to the torrent show page — see docs/integration.md"
+        "marque/parley": "Adds a comment thread to the torrent show page \u2014 see docs/integration.md"
     },
     "autoload": {
         "psr-4": {
@@ -84,7 +84,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-main": "4.0.x-dev"
+            "dev-main": "5.0.x-dev"
         },
         "laravel": {
             "providers": [
