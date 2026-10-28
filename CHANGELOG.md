@@ -7,6 +7,18 @@ follows the suite's [VERSIONING.md](../../VERSIONING.md). This changelog starts
 2026-08-26 — earlier releases aren't backfilled; see `git log` or
 [docs/upgrading.md](../../docs/upgrading.md) for the story up to this point.
 
+## [5.4.0] — 2026-10-28
+
+> Works with trove 5.0 as well as 4.x, and passes the editor to trove so a moderator's edit of someone else's torrent is recorded.
+
+### Changed
+
+- **`marque/trove` widened to `^4.8|^5.0`.** Nothing here depends on what trove 5 changed: an
+  owner passes every admin check, because `isAdmin()` now means admin or above.
+- **The edit screen passes the signed-in user to `TorrentService`.** On trove 5 a moderator
+  editing someone else's torrent is recorded as a staff action. On trove 4 the argument is
+  ignored and nothing changes.
+
 ## [5.3.1] — 2026-10-25
 
 > The torrent list no longer fails for a guest when an app lets guests reach it.

@@ -53,7 +53,7 @@
     ],
     "require": {
         "php": "^8.3",
-        "marque/trove": "^4.8",
+        "marque/trove": "^4.8|^5.0",
         "marque/deck": "^2.0",
         "illuminate/support": "^13.0",
         "illuminate/routing": "^13.0",
@@ -66,7 +66,7 @@
         "pestphp/pest": "^4.7",
         "mockery/mockery": "^1.6",
         "marque/squidink": "^1.0",
-        "marque/parley": "^2.0|^3.0",
+        "marque/parley": "^2.0|^3.0|^4.0",
         "laravel/pao": "^1.1"
     },
     "suggest": {
